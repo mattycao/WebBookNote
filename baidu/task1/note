@@ -1,0 +1,215 @@
+1. q tag will insert the quote automatically.
+2. the style of blockquote will has indence before and after.
+3. <br /> as enter.
+4. &nbsp; for the space.
+5. <hr /> horizontal line
+6. address tag will has Italic font. also block display. like a p.
+7. code for one line of code, pre for multiple line of code
+8. tbody -> will load after all the data loaded
+9. default style of table is nothing line, and the th is center and em.
+10. <table summary="表格简介文本">
+    摘要的内容是不会在浏览器中显示出来的。它的作用是增加表格的可读性(语义化)，使搜索引擎更好的读懂表格内容，还可以使屏幕阅读器更好的帮助特殊用户读取表格内容。
+
+11. <caption> 表格上方
+
+12. <a  href="目标网址"  title="鼠标滑过显示的文本">链接显示的文本</a>
+    title属性的作用，鼠标滑过链接文字时会显示这个属性的文本内容。这个属性在实际网页开发中作用很大，主要方便搜索引擎了解链接地址的内容（语义化更友好）
+
+13. <a href="目标网址" target="_blank">click here!</a>
+    open in a new tab.
+
+14. 如果mailto后面同时有多个参数的话，第一个参数必须以“?”开头，后面的参数每一个都以“&”分隔。
+
+15. <a href="mailto:yy@imooc.com?subject=观了不起的盖茨比有感&body=你好，对此评论有些想法。">对此影评有何感想，发送邮件给我</a>
+
+16. <form   method="传送方式"   action="服务器文件">
+
+17. <input type='text' name='myName' /> the name here is used for the backend to get the value
+
+18. <textarea  rows="行数" cols="列数">文本</textarea>
+
+19. :同一组的单选按钮，name 取值一定要一致，比如上面例子为同一个名称“radioLove”，这样同一组的单选按钮才可以起到单选的作用。
+    <input   type="radio/checkbox"   value="值"    name="名称"   checked="checked"/>
+    1、type:
+       当 type="radio" 时，控件为单选框
+       当 type="checkbox" 时，控件为复选框
+    2、value：提交数据到服务器的值（后台程序PHP使用）
+    3、name：为控件命名，以备后台程序 ASP、PHP 使用
+    4、checked：当设置 checked="checked" 时，该选项被默认选中
+
+20. <select>
+       <option value='reading' selected="selected">Reading</option>
+           reading is the value to pass, the Reading is the value to show on html
+
+21. <select multiple>
+    multiple choose, and use the command + click
+
+22. <input   type="submit"   value="提交">
+    type：只有当type值设置为submit时，按钮才有提交作用
+    value：按钮上显示的文字
+
+23. input type="reset" value="重置">
+    type：只有当type值设置为reset时，按钮才有重置作用
+    value：按钮上显示的文字
+
+24. <label for="控件id名称"> label标签不会向用户呈现任何特殊效果，它的作用是为鼠标用户改进了可用性。如果你在 label 标签内点击文本，就会触发此控件。就是说，当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上（就自动选中和该label标签相关连的表单控件上）。
+
+25. 内联式 > 嵌入式 > 外部式
+
+26. .first>span
+
+27. * {color:red;} 通用
+
+28. a:hover{color:red;}
+
+29. 内联样式表（标签内部）> 嵌入样式表（当前文件中）> 外部样式表（外部文件中）
+    层叠就是在html文件中对于同一个元素可以有多个css样式存在，当有相同权重的样式存在时，会根据这些css样式的前后顺序来决定，处于最后面的css样式会被应用。
+
+30. p{color:red!important;}
+
+31. font-family, font-size, color, font-weight, font-style
+    text-decoration: underline, line-through, text-indent: 2em, line-height
+    letter-spacing:50px;word-spacing:50px;
+
+    块状元素ext-align样式代码，如下代码可实现文本居中显示:text-align:center;
+
+32. 在讲解CSS布局之前，我们需要提前知道一些知识，在CSS中，html中的标签元素大体被分为三种不同的类型：块状元素、内联元素(又叫行内元素)和内联块状元素。
+    常用的块状元素有：
+    <div>、<p>、<h1>...<h6>、<ol>、<ul>、<dl>、<table>、<address>、<blockquote> 、<form>
+    常用的内联元素有：
+    <a>、<span>、<br>、<i>、<em>、<strong>、<label>、<q>、<var>、<cite>、<code>
+    常用的内联块状元素有：
+    <img>、<input>
+
+33. 1、每个块级元素都从新的一行开始，并且其后的元素也另起一行。（真霸道，一个块级元素独占一行）
+    2、元素的高度、宽度、行高以及顶和底边距都可设置。
+    3、元素宽度在不设置的情况下，是它本身父容器的100%（和父元素的宽度一致），除非设定一个宽度。
+
+34. 内联元素特点：
+    1、和其他元素都在一行上；
+    2、元素的高度、宽度、行高及顶部和底部边距不可设置；
+    3、元素的宽度就是它包含的文字或图片的宽度，不可改变。
+    wiki about space: http://www.imooc.com/wiki/view?pid=138
+
+35. inline-block元素特点：
+    1、和其他元素都在一行上；
+    2、元素的高度、宽度、行高以及顶和底边距都可设置。
+
+36. border: border-width border-style border-color
+    border-style: dashed, dotted, solid
+
+37. 块状元素有一个特点之一：在不设置宽度的情况下，显示为父容器的100%。）
+
+
+38. 布局模型
+    在网页中，元素有三种布局模型：
+    1、流动模型（Flow）
+    2、浮动模型 (Float)
+    3、层模型（Layer）
+
+39. (默认)流动布局模型具有2个比较典型的特征：
+    第一点，块状元素都会在所处的包含元素内自上而下按顺序垂直延伸分布，因为在默认状态下，块状元素的宽度都为100%。实际上，块状元素都会以行的形式占据位置。如右侧代码编辑器中三个块状元素标签(div，h1，p)宽度显示为100%。
+    第二点，在流动模型下，内联元素都会在所处的包含元素内从左到右水平分布显示。（内联元素可不像块状元素这么霸道独占一行）
+
+40. float:left;
+
+41. 层模型有三种形式：
+    1、绝对定位(position: absolute)
+    2、相对定位(position: relative)  然后相对于以前的位置移动，移动的方向和幅度由left、right、top、bottom属性确定，偏移前的位置保留不动。
+    3、固定定位(position: fixed)
+       表示固定定位，与absolute定位类型类似，但它的相对移动的坐标是视图（屏幕内的网页窗口）本身。由于视图本身是固定的，它不会随浏览器窗口的滚动条滚动而变化，除非你在屏幕中移动浏览器窗口的屏幕位置，或改变浏览器窗口的显示大小，因此固定定位的元素会始终位于浏览器窗口内视图的某个位置，不会受文档流动影响，这与background-attachment:fixed;属性功能相同
+
+42. 关于颜色的css样式也是可以缩写的，当你设置的颜色是16进制的色彩值时，如果每两位的值相同，可以缩写一半。
+    例子1：
+    p{color:#000000;}
+    可以缩写为：
+    p{color: #000;}
+    例子2：
+    p{color: #336699;}
+    可以缩写为：
+    p{color: #369;}
+
+43. 字体缩写
+    网页中的字体css样式代码也有他自己的缩写方式，下面是给网页设置字体的代码：
+    body{
+        font-style:italic;
+        font-variant:small-caps;
+        font-weight:bold;
+        font-size:12px;
+        line-height:1.5em;
+        font-family:"宋体",sans-serif;
+    }
+    这么多行的代码其实可以缩写为一句：
+    body{
+        font:italic  small-caps  bold  12px/1.5em  "宋体",sans-serif;
+    }
+    注意：
+    1、使用这一简写方式你至少要指定 font-size 和 font-family 属性，其他的属性(如 font-weight、font-style、font-varient、line-height)如未指定将自动使用默认值。
+    2、在缩写时 font-size 与 line-height 中间要加入“/”斜扛。
+    一般情况下因为对于中文网站，英文还是比较少的，所以下面缩写代码比较常用：
+    body{
+        font:12px/1.5em  "宋体",sans-serif;
+    }
+    只是有字号、行间距、中文字体、英文字体设置。
+
+44. 颜色值
+    在网页中的颜色设置是非常重要，有字体颜色（color）、背景颜色（background-color）、边框颜色（border）等，设置颜色的方法也有很多种：
+    1、英文命令颜色
+    前面几个小节中经常用到的就是这种设置方法：
+    p{color:red;}
+    2、RGB颜色
+    这个与 photoshop 中的 RGB 颜色是一致的，由 R(red)、G(green)、B(blue) 三种颜色的比例来配色。
+    p{color:rgb(133,45,200);}
+    每一项的值可以是 0~255 之间的整数，也可以是 0%~100% 的百分数。如：
+    p{color:rgb(20%,33%,25%);}
+    3、十六进制颜色
+    这种颜色设置方法是现在比较普遍使用的方法，其原理其实也是 RGB 设置，但是其每一项的值由 0-255 变成了十六进制 00-ff。
+    p{color:#00ffff;}
+
+45. 长度值
+    长度单位总结一下，目前比较常用到px（像素）、em、% 百分比，要注意其实这三种单位都是相对单位。
+    1、像素
+    像素为什么是相对单位呢？因为像素指的是显示器上的小点（CSS规范中假设“90像素=1英寸”）。实际情况是浏览器会使用显示器的实际像素值有关，在目前大多数的设计者都倾向于使用像素（px）作为单位。
+    2、em
+    就是本元素给定字体的 font-size 值，如果元素的 font-size 为 14px ，那么 1em = 14px；如果 font-size 为 18px，那么 1em = 18px。如下代码：
+    p{font-size:12px;text-indent:2em;}
+    上面代码就是可以实现段落首行缩进 24px（也就是两个字体大小的距离）。
+    下面注意一个特殊情况：
+    但当给 font-size 设置单位为 em 时，此时计算的标准以 p 的父元素的 font-size 为基础。如下代码：
+    html:
+    <p>以这个<span>例子</span>为例。</p>
+    css:
+    p{font-size:14px}
+    span{font-size:0.8em;}
+    结果 span 中的字体“例子”字体大小就为 11.2px（14 * 0.8 = 11.2px）。
+    3、百分比
+    p{font-size:12px;line-height:130%}
+    设置行高（行间距）为字体的130%（12 * 1.3 = 15.6px）。
+
+46. 如果被设置元素为文本、图片等行内元素时，水平居中是通过给父元素设置 text-align:center 来实现的。
+
+47. 当被设置元素为块状元素时用 text-align：center 就不起作用了，这时也分两种情况：定宽块状元素和不定宽块状元素。这一小节我们先来讲一讲定宽块状元素。
+    满足定宽和块状两个条件的元素是可以通过设置“左右margin”值为“auto”来实现居中的。 width:设置了
+
+48. 不定宽度的块状元素有三种方法居中（这三种方法目前使用的都比多）：
+    1. 加入 table 标签
+    2. 设置 display;inline 方法 改变块级元素的 dispaly 为 inline 类型，然后使用 text-align:center 来实现居中效果。这种方法相比第一种方法的优势是不用增加无语义标签，简化了标签的嵌套深度，但也存在着一些问题：它将块状元素的 display 类型改为 inline，变成了行内元素，所以少了一些功能，比如设定长度值。
+    3. 设置 position:relative 和 left:50%;
+       方法三：通过给父元素设置 float，然后给父元素设置 position:relative 和 left:50%，子元素设置 position:relative 和 left:-50% 来实现水平居中。
+
+49. 父元素高度确定的单行文本的竖直居中的方法是通过设置父元素的 height 和 line-height 高度一致来实现的。
+
+50. 垂直居中-父元素高度确定的多行文本（方法一）
+    父元素高度确定的多行文本、图片、块状元素的竖直居中的方法有两种：
+    方法一：使用插入 table (包括tbody、tr、td)标签，同时设置 vertical-align：middle。
+           d 标签默认情况下就默认设置了 vertical-align 为 middle，
+
+    方法二： 在 chrome、firefox 及 IE8 以上的浏览器下可以设置块级元素的 display 为 table-cell，激活 vertical-align 属性，但注意 IE6、7 并不支持这个样式。
+            display:table-cell;/*IE8以上及Chrome、Firefox*/
+            vertical-align:middle;/*IE8以上及Chrome、Firefox*/
+
+51. 隐性改变display类型
+    有一个有趣的现象就是当为元素（不论之前是什么类型元素，display:none 除外）设置以下 2 个句之一：
+    position : absolute
+    float : left 或 float:right
+    元素会自动变为以 display:inline-block 的方式显示，当然就可以设置元素的 width 和 height 了且默认宽度不占满父元素。

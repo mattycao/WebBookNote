@@ -1,0 +1,11 @@
+First Single page application
+
+1. An spa is an application that delivered to the browser that doesn't reload the page during use.
+   Like a fat client that is loaded from the web server.
+
+2. Java applets, Flash/Flex, and js is the mean 3 spa.
+
+   But only the javascript spa works without the overhead or security conerns of the third party
+   plug in.
+
+3.

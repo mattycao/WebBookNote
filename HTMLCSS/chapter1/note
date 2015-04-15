@@ -1,0 +1,50 @@
+WebPage building Blocks:
+HTML is used to define your content, and css is used to control how your content and webpage will work.
+
+1. webpage is primarily made up of three components:
+   1. text content
+   2. references to the other files, like videos, image, and style sheets.
+   3. Markup.
+
+2. Beginning of the page, some information for the use of browsers and search engine.
+
+3. page
+   has doctype, html, head, body:
+   doctype -> indicate the type of html, <!doctype html> -> html5
+   title -> appears on the browser tab and as the title at the top of browser window.
+            Besides, it is typically the default name of browser bookmark and is valuable information for search engine.
+   body -> the mean parts
+
+4. Markup: Elements attributes, values and more
+   Elements: like a little labels that describe the different parts of webpage.
+   some elements can have text insides, but some are not. like img tag.
+
+   Attribute and value: attribute and key pairs located inside an element's start tag. It is customary to enclose them in " marks.
+
+   element must be properly nested.
+
+   HTML used to be restricted to ASCII characters. So some special symbols must be escaped. Like &copy
+
+5. File and Folder names:
+   1. use all lowercse letters for your file names, and sparate words with dash, and add the .html extension.
+
+   2. use the lowercase and dash for your folders as well.
+
+   since search engine prefer the dash not the underscore.
+
+6. URL:
+   uniform resource locator, or URL
+   scheme: http, https
+   host:
+   path: directory + file
+
+7. absolute and relative url:
+   / the root, not / , it is relative
+
+8. Markup with meaning
+   semantic html can make your site more efficient and easier to maintain and style, also good for the seo.
+
+9. A browser default display of webpages
+   block and inline(pharsing content)
+
+
