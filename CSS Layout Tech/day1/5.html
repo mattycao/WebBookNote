@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Middle</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div.parentDiv {
+            height: 200px;
+            width: 300px;
+            border: 1px solid red;
+        }
+
+        div.wrapper {
+            float: left;
+            position: relative;
+            left: 50%;
+            clear: both;
+            margin-top: 10px;
+        }
+        div.centerDiv {
+            background-color: #f0ad4e;
+            position: relative;
+            left: -50%;
+        }
+    </style>
+</head>
+<body>
+<div class="parentDiv">
+    <div class="wrapper">
+        <div class="centerDiv">I am the content</div>
+    </div>
+    <div class="wrapper">
+        <div class="centerDiv">I am the content Length</div>
+        <div class="centerDiv">I am the content Length</div>
+    </div>
+</div>
+</body>
+</html>

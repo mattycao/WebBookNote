@@ -1,0 +1,69 @@
+CSS布局奇淫技巧之各种居中
+
+1. 几种简单的人畜无害的居中方法：
+   1) margin: auto,
+      specifically to say, it is setting the margin-left and margin right to be auto, then
+      it will be the center in the horizontal way.
+
+      Note it has no effect on the  float and absolute elements.
+
+   2) text-align: center
+      make it center if the element is inline or inline-block
+
+      Note: ie6, 7 can make every elements to be in the center
+
+   3) line-height in vertical
+      make the line-height to be height of parent, suit for the single line content
+
+   4) using the table
+      if you using the table, with the td, th element, it can perfectly solve the problem
+      by using the align='center' and valign='middle' (by default, the table will make it
+      content in the middle in the vertical line)
+
+      if we want using the css attribute on the table:
+      1. vertical-align: middle,
+      2. in ie6-7, text-algin: center
+         other: text-align: only work on the inline elements.
+                note here, if using the inline element, the height and width of the elements
+                will be set auto, if we using the inline-block, it can be setting the
+                width and height.
+
+   5) display: table-cell
+      see 2.html, only work on the standard browser.
+
+2. 奇淫技巧
+   1) using the absolute
+      Note: 此法只适用于那些我们已经知道它们的宽度或高度的元素
+      绝对定位进行居中的原理是通过把这个绝对定位元素的left或top的属性设为50%,这个时候元素并不是居中的，
+      而是比居中的位置向右或向左偏了这个元素宽度或高度的一半的距离，所以需要使用一个负的margin-left或
+      margin-top的值来把它拉回到居中的位置，这个负的margin值就取元素宽度或高度的一半。
+      see 3.html
+
+   2) another absolute
+      此法同样只适用于那些我们已经知道它们的宽度或高度的元素, under standard browser
+      see 4.html
+      in this way, set the top, left, right, bottom to be 0 under absolute, then setting the
+      margin auto, it will set the margin even to feel like it in the middle.
+
+   3) 使用浮动配合相对定位来进行水平居中
+      此方法也是关于浮动元素怎么水平居中的解决方法，并且我们不需要知道需要居中的元素的宽度。
+
+      浮动居中的原理是：把浮动元素相对定位到父元素宽度50%的地方，但这个时候元素还不是居中的，
+      而是比居中的那个位置多出了自身一半的宽度，这时就需要他里面的子元素再用一个相对定位，把
+      那多出的自身一半的宽度拉回来，而因为相对定位正是相对于自身来定位的，所以自身一半的宽度
+      只要把left 或 right 设为50%就可以得到了，因而不用知道自身的实际宽度是多少。
+
+      这种使用浮动配合相对定位来居中的方法，优点是不用知道要居中的元素的宽度，即使这个宽度是
+      不断变化的也行；缺点是需要一个多余的元素来包裹要居中的元素。
+
+      see 5.html
+
+   4) 利用font-size来实现垂直居中
+      如果父元素高度是已知的，要把它里面的子元素进行水平垂直居中，则可以使用这种方法，且子元素的宽度或高度都不必知道。
+
+      该方法只对IE6和IE7有效。
+
+      该方法的要点是给父元素设一个合适的font-size的值，这个值的取值为该父元素的高度除以1.14得到的值，并且子元素必须
+      是一个inline或inline-block元素，需要加上vertical-align:middle属性。
+
+
