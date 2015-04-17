@@ -1,0 +1,21 @@
+HTML5 特性：
+1. HTML
+   markup language, not a programming language.
+
+   HTML5 related: HTML. css, javascript, iquery
+
+   HTML5: new: canvas, video, audio, local storage, new tag element, new browser support
+
+2.<!doctype html>
+  indicate the type of html
+  basic tag like: head, body, inside the html
+                  h from 1 to 6
+  <meta charset='utf-8'>
+  p
+  hx
+  a href
+  link href
+  script src
+  img src
+
+3. 
