@@ -1,4 +1,3 @@
-#JQuery
 ##Chapter1 认识JQuery
 ###JQuery和JS的认识
 1. Javascript的弊端
@@ -31,11 +30,11 @@
         });
 ---
 
-| window.onload | $(document).ready(function(){})
+| `window.onload` | `$(document).ready(function(){})`
 ---|---|---
 执行时机| 必须等待网页中所有的内容加载完毕后(包括图片)才能执行 | 网页中所有的DOM结构绘制完毕后就执行 可能DOM元素相关联的东西并没有加载完
 编写个数| 不能写多个 | 可以写多个
-简化写法| 无 | $(function(){})
+简化写法| 无 | `$(function(){})`
 
 ###JQuery的代码风格：
  - 对于同一个对象不超过三个操作，可以直接写成一行。
@@ -88,4 +87,4 @@
         })(JQuery);
         // outside the scope, the $ will be released
 7. JQuery库在其他库之前导入
- 如果JQuery库在其他库之前就导入，那么可以直接使用JQuery来做JQuery一些的工作，而无需调用JQuery.noConflict().
+如果JQuery库在其他库之前就导入，那么可以直接使用JQuery来做JQuery一些的工作，而无需调用`JQuery.noConflict()`.
