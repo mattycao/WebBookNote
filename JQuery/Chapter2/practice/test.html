@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="../../jquery.js"></script>
+</head>
+<body>
+<div>
+    <ul>
+        <li>A
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <p>P</p>
+        </li>
+    </ul>
+</div>
+<script>
+    $(function () {
+                console.log($('ul li :first-child')[0]);
+                //$('ul li:first-child').css('color', 'red');
+            }
+    );
+</script>
+</body>
+</html>

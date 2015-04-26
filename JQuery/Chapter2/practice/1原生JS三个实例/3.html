@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>输出多选框的个数</title>
+</head>
+<body>
+<form method="post" action="#">
+    <input type="checkbox" value="1" name="check" checked="checked"/>
+    <input type="checkbox" value="2" name="check" />
+    <input type="checkbox" value="3" name="check" checked="checked"/>
+    <input type="button" value="你选中的个数" id="btn"/>
+</form>
+<script>
+    window.onload = function() {
+        var btn = document.getElementById('btn');
+        btn.onclick = function() {
+            var sum = 0;
+            var checkbox = document.getElementsByName('check');
+            for(i = 0; i < checkbox.length; i++) {
+                if(checkbox[i].checked)
+                    sum++;
+            }
+            alert(sum);
+        }
+    }
+</script>
+</body>
+</html>

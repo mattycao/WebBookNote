@@ -147,3 +147,11 @@ selector | details | return | example
 
 ####2. 选择器中含有空格的注意事项
 有空格就是父辈，相当于一个后代选择器，而没有空格，就是过滤选择器，就像我在前面说的一样
+
+###7 实例中用到的一些JQuery函数
+- `show()`
+- `css(name, value)`
+- `text(string)`
+- `filter(expr)`: 筛选元素
+- `addClass(class)`
+- `find(expr)`: 在元素内寻找匹配的元素

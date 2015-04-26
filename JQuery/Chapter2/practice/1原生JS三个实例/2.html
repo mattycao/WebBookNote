@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>表格变色</title>
+</head>
+<body>
+<div>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>11111</th>
+            <th>22222</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    var table = document.getElementsByTagName('table')[0];
+    var tr = table.getElementsByTagName('tr');
+    for(var i = 0; i < tr.length; i = i + 2) {
+        tr[i].style.backgroundColor = 'green';
+    }
+</script>
+</body>
+</html>
