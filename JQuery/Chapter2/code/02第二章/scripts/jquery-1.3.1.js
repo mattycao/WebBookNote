@@ -95,7 +95,7 @@ jQuery.fn = jQuery.prototype = {
 	selector: "",
 
 	// The current version of jQuery being used
-	jquery: "1.3.1",
+	jquery: "1.5.1",
 
 	// The number of elements contained in the matched element set
 	size: function() {

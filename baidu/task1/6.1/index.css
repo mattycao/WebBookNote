@@ -1,0 +1,12 @@
+#centerDiv {
+    background-color: red;
+    width: 960px;
+    margin: 100px auto;
+}
+#middleDiv {
+    position: absolute;
+    width: 960px;
+    left: 50%;
+    margin-left: -480px;
+    background-color: red;
+}

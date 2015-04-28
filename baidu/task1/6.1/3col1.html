@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Three Col</title>
+    <style>
+        body, div {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            height: 100px;
+
+        }
+        .main-wrapper {
+            padding: 0 250px 0 200px;
+            background: red;
+            overflow: hidden;
+        }
+        .main {
+
+            float:left;
+            width: 100%;
+            overflow: hidden;
+
+        }
+        .left {
+            float:left;
+            width: 200px;
+            margin-left: -100%;
+            background: green;
+            overflow: hidden;
+        }
+        .right {
+            float: left;
+            width: 250px;
+            margin-left: -250px;
+            background: yellow;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="main-wrapper">
+        <pre>This is the main content
+        asdfasdf</pre>
+    </div>
+</div>
+<div class="left">
+    <pre>This is the main content</pre>
+</div>
+<div class="right">
+    <pre>This is the main content</pre>
+</div>
+</body>
+</html>
