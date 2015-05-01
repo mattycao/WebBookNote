@@ -30,3 +30,5 @@ Bootstrap includes a responsive, mobile first fluid grid system that appropriate
     - .warning
     - .danger
 7. put the .table in the .table-responsive div, it will be a responsive table.
+
+##Forms
