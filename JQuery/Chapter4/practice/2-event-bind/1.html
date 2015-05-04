@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Event binding</title>
+    <script src="../../../jquery.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #panel {
+            width: 300px;
+            border: 1px solid #0050D0
+        }
+
+        .head {
+            padding: 5px;
+            background: #96E555;
+            cursor: pointer
+        }
+
+        .content {
+            padding: 10px;
+            text-indent: 2em;
+            border-top: 1px solid #0050D0;
+            display: block;
+            display: none;
+        }
+    </style>
+    <script>
+        $(function() {
+            $('h5.head').bind('click', function() {
+                $(this).next().show('slow');
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="panel">
+    <h5 class="head">What is JQuery?</h5>
+
+    <div class="content">I will told you about what is JQuery.</div>
+</div>
+</body>
+</html>
