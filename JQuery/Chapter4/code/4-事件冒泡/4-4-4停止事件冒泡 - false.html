@@ -17,13 +17,13 @@ $(function(){
 	$('span').bind("click",function(event){
 		var txt = $('#msg').html() + "<p>内层span元素被点击.<p/>";
 		$('#msg').html(txt);
-		return false;
+		//return false;
 	});
 	// 为div元素绑定click事件
 	$('#content').bind("click",function(event){
 	    var txt = $('#msg').html() + "<p>外层div元素被点击.<p/>";
 		$('#msg').html(txt);
-		return false;
+		//return false;
 	});
 	// 为body元素绑定click事件
 	$("body").bind("click",function(){
