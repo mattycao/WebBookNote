@@ -31,4 +31,24 @@ Bootstrap includes a responsive, mobile first fluid grid system that appropriate
     - .danger
 7. put the .table in the .table-responsive div, it will be a responsive table.
 
-##Forms
+## form
+* form-group
+* form-control: make the round border
+* help-block for file input
+* form-inline
+* form-horizontal
+* control-label: make the label indent to right
+* class=sr-only: hidden the label
+* input support: text,
+* textarea, checkbox, radio
+
+## button
+* btn-block: 100%width
+* the btn can be also used in the a
+* button: can be disabled, or active
+* a add the .disabled class
+
+## image
+* img-circle
+* img-rounded
+* img-thumbnail
