@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="../../jquery.js"></script>
+    <script src="jquery.validation.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+</head>
+<body>
+<!--requirement: username(2-10), and password(2-16)-->
+<div>
+    <form class="form-horizontal" id="demoForm">
+        <div class="form-group">
+            <label for="username" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-4">
+                <input type="email" class="form-control" id="username" name="username" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-4">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="repassword" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-4">
+                <input type="password" class="form-control" id="repassword" name="repassword" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="button" class="btn btn-default" id="check">Check</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    $(function() {
+        $('#demoForm').validate({
+            debug: true,
+            rules: {
+                username: {
+                    required: true
+                    //digits: true // must be none-negative integer
+
+                },
+                password: {
+                    required:true,
+                    minlength: 2,
+                    maxlength: 16
+                },
+                repassword: {
+                    equalTo: '#password' // following by a selector string
+                }
+            }
+        });
+
+        $('#check').click(function() {
+            alert($('#demoForm').valid()? 'right' : 'wrong');
+        });
+
+
+    });
+</script>
+</body>
+</html>

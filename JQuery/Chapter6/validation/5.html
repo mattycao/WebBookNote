@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="../../jquery.js"></script>
+    <script src="jquery.validation.js"></script>
+</head>
+<body>
+<!--requirement: username(2-10), and password(2-16)-->
+<div>
+    <form action="" id="demoForm">
+        <fieldset>
+            <legend>Login</legend>
+            <div>
+                <label for="username">Account</label>
+                <input type="text" id="username" name="username"/>
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"/>
+            </div>
+            <div>
+                <label for="repassword">Password</label>
+                <input type="password" id="repassword" name="repassword"/>
+            </div>
+            <button>Login</button>
+        </fieldset>
+    </form>
+</div>
+<script>
+    $(function() {
+        $('#demoForm').validate({
+            debug: true,
+            rules: {
+                username: {
+                    required: true,
+                    //number: true
+                    //digits: true // must be none-negative integer
+
+                },
+                password: {
+                    required:true,
+                    minlength: 2,
+                    maxlength: 16
+                },
+                repassword: {
+                    equalTo: '#password' // following by a selector string
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
